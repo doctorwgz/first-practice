@@ -1,0 +1,6 @@
+git add .:添加
+git commit -m "添加文件夹"：本地提交文件
+git pull：拉取远程更新
+git push：将本地分支推送到远程
+git pull origin wangguangzheng：将我的分支拉到要合并的分支上
+git push：最后推送一次

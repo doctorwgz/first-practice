@@ -1,0 +1,115 @@
+/* ---------- 全局重置与基础变量 ---------- */
+:root {
+  --brand-red: #f5394a;
+  --brand-red-deep: #e01f33;
+  --brand-blue: #2f7bff;
+  --gold: #f6b73c;
+  --up: #1ec07a;   /* 原型为美股惯例:涨绿 */
+  --down: #f5485a; /* 跌红 */
+  --up-bg: #eafaf2;
+  --down-bg: #ffeef0;
+  --text-main: #1a1d24;
+  --text-sub: #8a93a6;
+  --line: #eef0f4;
+  --bg-page: #f4f5f7;
+  --radius: 14px;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei',
+    'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: var(--text-main);
+  background: #0b1220;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+#app {
+  height: 100%;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+input {
+  font-family: inherit;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+/* 隐藏滚动条但保留滚动能力 */
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* ---------- 通用手机内页结构 ---------- */
+.screen {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+.screen.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* 状态栏(模拟 iOS 9:41) */
+.status-bar {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 18px;
+  font-size: 14px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+.status-bar .right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+}
+
+/* 文字省略 */
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

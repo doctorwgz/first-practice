@@ -1,0 +1,5 @@
+1.学习了一些基础命令：包括mkdir创建，rm -rf删除，status状态，echo创建，cat查看
+2.echo "这是第一个文件">file1.txt，当其在工作区的时候，“file1.txt”为🔴红字；当使用git add file1.txt命令时，“file1.txt”为绿字，即被放入暂存区；
+3.git status:查看仓库的状态；git add：添加到暂存区；git commit（-m ""：指定提交的信息）：提交暂存区中的内容，不会提交工作区中内容；git log：查看仓库提交历史记录；git add *.txt：将工作区的txt存入到暂存区；git add .：将所有文件提交到暂存区
+4.git reset --soft：保留工作区和暂存区的内容；git reset --hard：不保留工作区和暂存区的内容；git reset --mixed：保留工作区的内容，不保留暂存区的内容。
+5.
